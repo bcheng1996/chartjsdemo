@@ -56,7 +56,7 @@
         let formdata = ($("form").serializeArray())
         $.post("/purchase", formdata, function(data){
             if(data){
-                alert("You bought some stuff!")
+                window.location = "/"
             }
         })
     })
